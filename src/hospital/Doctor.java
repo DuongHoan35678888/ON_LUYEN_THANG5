@@ -1,6 +1,6 @@
 package hospital;
 
-public class Doctor extends Staff {
+public class Doctor extends Employees {
     private String specialized;
     public Doctor(){
     }
@@ -9,8 +9,8 @@ public class Doctor extends Staff {
         this.specialized = specialized;
     }
 
-    public Doctor(String name, int age, String sex, String address, String specialized) {
-        super(name, age, sex, address);
+    public Doctor(String name, int age, Gender gender, String address, String roles, String specialized) {
+        super(name, age, gender, address, roles);
         this.specialized = specialized;
     }
 
